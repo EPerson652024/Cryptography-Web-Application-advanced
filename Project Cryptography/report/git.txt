@@ -1,0 +1,12 @@
+Text to ROT13 Cipher
+https://hellodevworld.com/365-days-of-coding/rot13-cipher-javascript-solution
+Decode Morse Code Reference
+https://stackoverflow.com/questions/43726344/js-decoding-morse-code
+Encrypt Morse Code Reference
+https://www.tutorialspoint.com/converting-string-to-morse-code-in-javascript
+morse code to audio Reference
+https://sizeof.cat/post/javascript-morse-code/
+GitHub
+git@github.com:EPerson652024/Text-to-ROT13-Ceaser-Cipher-Morse-Code-.git
+
+

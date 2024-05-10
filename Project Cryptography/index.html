@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptography</title>
+    <link rel="icon" type="image/x-icon" href="IMAGES/favicon.png">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>Cipher Cryptography Converter</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <!--ROT13 Ceaser Cipher-Start-->
+        <div class="card_rot13" id="card_rot13">
+            <p> Rot13 Cryptography Converter</p>
+            <div>
+                <input type="text" id="Text_input" placeholder="Place your Text Here">
+                <label for="codingMechanism">Coding Mechanism:</label>
+                <select id="codingMechanism">
+                    <option value="caesar">ROT13 Caesar Cipher</option>
+                    <option value="decaesar">Decrp-ROT13 Caesar Cipher</option>
+                </select>
+                <button type="submit" class="submit" onclick="gettext_FromRat()">Submit</button>
+                <p>Plaintext:</p>
+                <span for="plaintext" id="plaintext"></span>
+                <p>Cypher:</p>
+                <span for="cyphertext" id="result"></span>
+            </div>
+        </div>
+        <!--ROT13 Ceaser Cipher-End-->
+        <!--Morse Cipher-Start-->
+        <div class="card_morse" id="card_morse">
+            <p>Morse Cryptography Converter</p>
+            <div>
+                <input type="text" id="MorseText_input" placeholder="Place your Text Here">
+                <label for="MorsecodingMechanism">Coding Mechanism:</label>
+                <select id="MorsecodingMechanism">
+                    <option value="morse">Morse Code</option>
+                    <option value="demorse"> Decry-Morse Code</option>
+                </select>
+                <button type="submit" class="submit" onclick="FromMorse()">Submit</button>
+                <button type="submit" class="play" id="playButton">Play</button>
+                <p>Plaintext:</p>
+                <span for="plaintext" id="Morseplaintext"></span>
+                <p>Cypher:</p>
+                <span for="cyphertext" id="Morseresult"></span>
+            </div>
+        </div>
+        <!--Morse Cipher-End-->
+        <!--Shifting Ceaser Cipher-Start-->
+        <div class="card_shift" id="card_shift">
+            <p>Shifting Ceaser Cipher Converter</p>
+            <div>
+                <input type="text" id="Shift_Text_input" placeholder="Place your Text Here">
+                <label for="Shifting">Coding Mechanism:</label>
+                <select id="Shifting">
+                    <option value="0">Shift 0</option>
+                    <option value="1">Shift 1</option>
+                    <option value="2">Shift 2</option>
+                    <option value="3">Shift 3</option>
+                    <option value="4">Shift 4</option>
+                    <option value="5">Shift 5</option>
+                    <option value="6">Shift 6</option>
+                    <option value="7">Shift 7</option>
+                    <option value="8">Shift 8</option>
+                    <option value="9">Shift 9</option>
+                    <option value="10">Shift 10 </option>
+                    <option value="11">Shift 11 </option>
+                    <option value="12">Shift 12 </option>
+                    <option value="13">Shift 13 </option>
+                    <option value="14">Shift 14 </option>
+                    <option value="15">Shift 15 </option>
+                    <option value="16">Shift 16 </option>
+                    <option value="17">Shift 17 </option>
+                    <option value="18">Shift 18 </option>
+                    <option value="19">Shift 19</option>
+                    <option value="20">Shift 20</option>
+                    <option value="21">Shift 21</option>
+                    <option value="22">Shift 22</option>
+                    <option value="23">Shift 23</option>
+                    <option value="24">Shift 24</option>
+                    <option value="25">Shift 25</option>
+                </select>
+                <button type="submit" class="submit" onclick="FromShift()">Submit</button>
+                <p>Plaintext:</p>
+                <span for="plaintext" id="Shift_plaintext"></span>
+                <p>Cypher:</p>
+                <span for="cyphertext" id="Shift_result"></span>
+            </div>
+        </div>
+
+        <!--Shifting Ceaser Cipher-End-->
+        <!--Shift Buttons-Start-->
+        <div class="outerbutton">
+            <button type="submit" class="submit_rot" onclick="rotshift()">ROT13</button>
+            <button type="submit" class="submit_morse" onclick="morseshift()">Morse Cipher</button>
+            <button type="submit" class="submit_shift" onclick="shift()">Shift-Cipher</button>
+            <a href="reverse.html" target="_blank"><button type="submit" class="submit_shift">Reverse Text</button></a>
+        </div>
+        <!--Shift Buttons-End-->
+    </div>
+    <script src="JS/script.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>

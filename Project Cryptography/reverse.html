@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Generator</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .main
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: aliceblue;
+        height: 90vh;
+    }
+    nav
+    {
+        width: 100%;
+        height: 5vh;
+        background-color: bisque;
+        
+    }
+    ul, li
+    {
+        text-decoration: none;
+        list-style: none;
+        font-size: larger;
+        font-family: cursive;
+        text-align: center;
+    }
+    .container {
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 15px;
+        border-top: 5px solid beige;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+        background-color: burlywood;
+        border-radius: 10px;
+    }
+
+    .text {
+        width: 100%;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 15px;
+        border-radius: 5px;
+        border: 1px solid wheat;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .click {
+        font-family: cursive;
+        padding: 3px 10px;
+        border-radius: 5px;
+    }
+
+    h1,
+    h2 {
+        text-align: center;
+    }
+
+    .showoutput {
+        width: 49%;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 15px;
+        border-left: 1px solid black;
+        display: inline;
+        float: right;
+    }
+    .showinput {
+        width: 49%;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 15px;
+        display: inline;
+        float: left;
+    }
+</style>
+
+<body>
+    <nav>
+        <ul>
+            <li>Reverse Text</li>
+        </ul>
+    </nav>
+    <div class="main">
+    <div class="container">
+        <h1>Text Reverser</h1>
+        <input type="text" class="text" id="text" placeholder="Enter Text Here">
+        <button class="click" onclick="reverse()">Submit</button>
+        <h2>Output</h2>
+        <p class="showinput" id="showinput"></p>
+        <p class="showoutput" id="showoutput"></p>
+    </div>
+    </div>
+    <script>
+        function reverse()
+        {
+        var str = document.getElementById("text").value;
+        const reversedString = str.split("").reduce((acc, char) => char + acc, "");
+            document.getElementById("showoutput").textContent = reversedString;
+            document.getElementById("showinput").textContent = str;
+            document.getElementById("text").value= "";
+        }
+    </script>
+</body>
+
+</html>
